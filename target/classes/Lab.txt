@@ -1,0 +1,12 @@
+# Docker allows us to create our own custom images using a special script called a Dockerfile. The Dockerfile contains a set of instructions for building an image. You can find the Dockerfile under the root directory of this lab, as this is usually where a dockerfile may be found.
+# This one is short. Every Dockerfile needs to start from an existing image, using a line such as 'FROM ubuntu' or 'FROM scratch'. We're going to do a few things here - first, within the Dockerfile, change the image your new image will be built from 'scratch' to 'alpine'.
+# Next, we're going to build a new docker image based off of that dockerfile, for which you'll need to use the 'docker build' command, which is structures as the following: 'docker build [options] [directory]'. For options, you might imagine that we'd need to name the container. For the directory, we'd usually specify the current working directory, for which we can use period '.'. For instance, creating a sample image from a dockerfile may look like this:
+# 'docker build -t sample .'
+# Write a command to build a docker image from the current directory, with the name 'myimage'.
+# ENTER YOUR COMMAND ON THE LINE BELOW, WITHOUT A HASH SYMBOL OR BLANK LINES
+
+# Finally, run the image you just created as a docker container using the same 'docker run' command that you've seen before.
+# ENTER YOUR COMMAND ON THE LINE BELOW, WITHOUT A HASH SYMBOL OR BLANK LINES
+
+# Of course, real dockerfile are composed of multiple lines of code, as they can be specialized for a specific purpose.
+# If you're having trouble passing the tests for the 'docker run' command - have you changed the starting image for the Dockerfile?
